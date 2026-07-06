@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
+    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
+        <span class="nav-link terminal-text">{{site.data.profile.primary_name | replace: ' ', '' }}<span class="terminal-zju">@deadline-mode</span><span class="terminal-dim">:</span><span class="terminal-dim">~</span><span class="terminal-dim">$</span><span class="terminal-cursor"></span></span>
+        <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
+        <button class="navbar-toggler navbar-toggler-compact" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-map"></i> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                {% for item in site.data.navigation.pages %}
+                <li class="nav-item {% if item.name == page.navbar_title %}active{% endif %}">
+                    <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+                <li class="nav-item">
+                    <button class="nav-link theme-toggle-btn" id="themeToggle" aria-label="Toggle dark/light mode"></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    // Check for saved theme preference or default to 'light'
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    if (currentTheme === 'dark') {
+        body.classList.add('dark-mode');
+    }
+
+    // Toggle theme
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+        localStorage.setItem('theme', theme);
+    });
+</script>

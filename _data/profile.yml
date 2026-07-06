@@ -1,0 +1,59 @@
+primary_name: "Bidyarthi Paul"
+
+positions:
+- name: Prospective Ph.D. candidate (Fall-2027) <br> Ahsanullah University of Science and Technology (AUST)
+
+location: Dhaka, Bangladesh
+email: "bidyarthipaul01@gmail.com"
+cv_link: https://drive.google.com/file/d/16XacBVs7_8XsUiQWLDTKoRw_togJuJI3/view?usp=drive_link
+gscholar: https://scholar.google.com/citations?user=tcZ35mEAAAAJ&hl=en
+github: Bidyarthi404
+linkedin: bidyarthi-paul
+orcid: 0009-0003-5892-5786
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a CS graduate working in <b>Natural Language Processing (NLP)</b>, with a focus on Bengali and other 
+    low-resource language technologies. My research spans Bengali mathematical reasoning, regional dialect 
+    processing, named entity recognition, and harmful content detection. More recently, I have developed a 
+    growing interest in <b>LLM reasoning</b> and <b>AI safety</b>, particularly in understanding how large 
+    language models reason, fail, and behave in safety-critical settings.
+    <br><br>
+    🎓 I am actively looking for <b>PhD opportunities for Fall 2027</b> in NLP, LLM reasoning, and AI safety. 
+    My long-term goal is to contribute to building robust, interpretable, and reliable AI systems, especially 
+    for low-resource and multilingual settings. If my research interests align with your group, I would be glad 
+    to connect 📩.
+  </p>
+
+portrait_url: /assets/images/photos/profile.jpg 
+
+education:
+- name: Ahsanullah University of Science and Technology (AUST)
+  logo: /assets/images/badges/aust.png
+  position: >- 
+    B.Sc. in Computer Science and Engineering (CSE)
+  date: Dec. 2020 - Jan. 2025
+
+experience:
+- name: Southeast University, Dhaka, Bangladesh
+  logo: /assets/images/badges/seu.png
+  position: Adjunct Lecturer
+  date: 23rd February, 2025 – Present
+
+- name: ELITE Research Lab LLC, Remote
+  logo: /assets/images/badges/elite.png
+  position: Research Assistant
+  date: 25th May, 2026 – Present
+
+awards:
+- name: Received a research grant from the Institute of Research & Training (IRT), Southeast University for ANCHOLIK-NER.
+  date: 2025
+- name: Dean's List of Honor, 2nd Position
+  date: 2024
+- name: Consistently received merit based waivers in the 1st, 2nd, 3rd, 5th, 6th, and 7th semesters based on top academic ranking and merit within the CSE Department.
+  date: 2020 - 2024
+- name: Scholars' School and College Science Fair 2nd Runners up
+  date: 2016
+- name: General Scholarship in JSC (Junior School Certificate)
+  date: 2014

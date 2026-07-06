@@ -1,0 +1,34 @@
+---
+layout: default
+title : Bidyarthi Paul
+navbar_title: Home
+---
+
+<div class="row">
+    <div class="col-lg-4 col-md-5">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-8 col-md-7">
+
+        {% include widgets/profile_card_bio_only.html %}
+
+        <!-- Debugging widgets -->
+        {% include widgets/debug_repo_name.html %}
+        {% include widgets/debug_url.html %}
+
+        {% if site.data.display.homepage.show_experience %}
+            {% include widgets/experience_card.html %}
+        {% endif %}
+
+        {% include widgets/news_card.html limit=10 %}
+
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='Selected Publications'
+        %}
+        {% endif %}
+    </div>
+</div>
